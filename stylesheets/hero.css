@@ -1,28 +1,100 @@
-/*@media (max-width: 1427px) {
-    body {
-        font-size: 52.5% !important;
-    }
+@media (max-width: 1360px) {
+	#title p{
+		font-size: 20em !important;
+	}
 }
 
-@media (max-width: 1209px) {
+@media (max-width: 1060px) {
 	#title p{
-		font-size: 25em !important;
-	}
-}*/
-
-/*@media (max-width: 1018px) {
-	#title p{
-		font-size: 12em !important;
-	}
-
-	#titleDiv {
-		width: calc(50% - 5px) !important;
+		font-size: 10em !important;
 	}
 
 	#basicInfo {
-		width: calc(50% - 5px) !important;
+		font-size: 80%;
 	}
-}*/
+
+	#content {
+		font-size: 80%;
+	}
+
+	#titleDiv {
+		width: calc(60% - 5px) !important;
+	}
+
+	#basicInfo {
+		width: calc(40% - 5px) !important;
+	}
+
+	/* drop content, title, and basicInfo font sizes, but NOT menu */
+	/* also give basicInfo more space
+	next step is reorganize banner layout*/
+}
+
+@media (max-width: 700px){
+	/*drop margins, reorganize the hero*/
+	#titleContainer {
+		top: 10% !important;
+		left: 5% !important;
+		width: 90% !important;
+		height: 80% !important;
+	}
+
+	/* TITLE COMPONENT */
+	#titleDiv {
+		width: 100% !important;
+		height: calc(40% - 5px) !important;
+		float: none !important;
+	}
+
+	#title {
+		bottom: 30px !important;
+		right: 50% !important;
+		transform: translateX(50%) !important;
+	}
+
+	#title p {
+		font-size: 6em !important;
+	}
+
+	/* DIVIDING LINE */
+	#divider {
+		height: 10px !important;
+		width: 100% !important;
+	}
+
+	/* INFO COMPONENT */
+	#basicInfo {
+		height: calc(60% - 5px) !important;
+		width: 100% !important;
+		font-size: 70%;
+	}
+
+	#basicInfo div {
+		margin-top: 30px !important;
+		margin-left: 0 !important;
+		top: 0 !important;
+		width: auto !important;
+		display: inline-block;
+		height: calc (100% - 30px) !important;
+		position: relative !important;
+		left: 50% !important;
+		transform: translateX(-50%) !important;
+	}
+
+	/*#basicInfo div p {
+		margin: 0px;
+		font-size: 3.5em;
+		color: #E0E0E0
+	}*/
+
+	/*#basicInfo a{
+		color:#B5D8FF
+	}*/
+
+
+}
+
+/*@media (m-width: )*/
 
 @media (min-aspect-ratio: 1080/645){
 	#hero img {
@@ -31,47 +103,12 @@
 	}
 }
 
-@media (max-aspect-ratio: 1070/645){
+@media (max-aspect-ratio: 1079/645){
 	#hero img {
 		width: auto;
 		height: 130%;
 	}
 }
-/*@media (min-width: 731 px){
-	#hero {
-		min-height: 260px;
-	}
-}*/
-
-/*these queries are gonna get real complicated real soon*/
-
-/*@media (max-width: 730px) {
-	#title p{
-		font-size: 12em !important;
-	}
-
-	#titleDiv {
-		width: calc(50% - 5px) !important;
-	}
-
-	#basicInfo {
-		width: calc(50% - 5px) !important;
-	}
-}
-
-@media (min-width: 1019px) {
-	#title p{
-		font-size: 12em !important;
-	}
-
-	#titleDiv {
-		width: calc(50% - 5px) !important;
-	}
-
-	#basicInfo {
-		width: calc(50% - 5px) !important;
-	}
-}*/
 
 html, body {
 	height: 100%;
