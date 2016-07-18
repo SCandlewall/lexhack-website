@@ -1,5 +1,5 @@
 window.onload = function() {
-	if(!(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) ) {
+	// if(!(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) ) {
 		var sticked = false;
 
 		if ((top < 0)){
@@ -23,12 +23,12 @@ window.onload = function() {
 				sticked = false;
 			}
 		}
-	}
-
-	else {
-		var menu = document.getElementById("menu");
-		menu.style.position = "fixed";
-		menu.removeAttribute("top");
-		menu.style.bottom = 0;
-	}
+	// }
+	//
+	// else {
+	// 	var menu = document.getElementById("menu");
+	// 	menu.style.position = "fixed";
+	// 	menu.removeAttribute("top");
+	// 	menu.style.bottom = 0;
+	// }
 }
