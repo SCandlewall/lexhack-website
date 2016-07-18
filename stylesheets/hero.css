@@ -26,11 +26,17 @@
 
 @media (min-aspect-ratio: 1080/645){
 	#hero img {
-		width: calc(100%) !important;
-		height: auto !important;
+		width: 100%;
+		height: auto;
 	}
 }
 
+@media (max-aspect-ratio: 1070/645){
+	#hero img {
+		width: auto;
+		height: 130%;
+	}
+}
 /*@media (min-width: 731 px){
 	#hero {
 		min-height: 260px;
@@ -84,14 +90,13 @@ html {
 #hero {
 	height: calc(100% - 50px);
 	width: inherit;
-	/*overflow-x: hidden;
-	overflow-y: hidden;*/
+	overflow-x: hidden;
+	overflow-y: hidden;
 	position: relative;
 
 }
 
 #hero img {
-	height: 130%;
 	overflow-x: hidden;
 	overflow-y: hidden;
 }
@@ -108,7 +113,6 @@ html {
 
 /* TITLE COMPONENT */
 #titleDiv {
-	/*originally 65*/
 	width: calc(70% - 5px);
 	height: 100%;
 	position: relative;
@@ -138,7 +142,7 @@ html {
 
 /* DIVIDING LINE */
 #divider {
-	width: 320px;
+	width: 10px;
 	height: 100%;
 	position: relative;
 	background-color: #E0E0E0;
@@ -169,13 +173,3 @@ html {
 #basicInfo a{
 	color:#B5D8FF
 }
-
-
-/*#titleContainer {
-	overflow: visible;
-	position: absolute;
-	border: 2px solid red;
-	left: 10%;
-	width: 80%;
-	height: 50%;
-}*/
