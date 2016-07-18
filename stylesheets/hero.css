@@ -92,6 +92,13 @@
 	}*/
 
 
+	#content {
+		width: 90% !important;
+		margin-left: 5% !important;
+		font-size: 70% !important;
+	}
+
+
 }
 
 /*@media (m-width: )*/
