@@ -65,6 +65,7 @@ word-wrap: break-word;       /* Internet Explorer 5.5+ */
 
 #Contact {
 	background-color: #316bb2;
+	margin-bottom: 90px !important;
 }
 
 h1 {
