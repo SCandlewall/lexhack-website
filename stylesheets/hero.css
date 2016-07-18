@@ -55,7 +55,7 @@
 	/* TITLE COMPONENT */
 	#titleDiv {
 		width: 100% !important;
-		height: calc(25% - 5px) !important;
+		height: calc(40% - 5px) !important;
 		float: none !important;
 	}
 
@@ -74,7 +74,7 @@
 
 	/* INFO COMPONENT */
 	#basicInfo {
-		height: calc(75% - 5px) !important;
+		height: calc(60% - 5px) !important;
 		width: 100% !important;
 		font-size: 75%;
 	}
