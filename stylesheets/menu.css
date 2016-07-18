@@ -2,6 +2,14 @@
 	#menu li a {
 		font-size: 2.5em !important;
 	}
+
+	#menu .first {
+		margin-left: 5% !important;
+	}
+
+	#menu li {
+		width: 22.5% !important;
+	}
 }
 
 #menu {
