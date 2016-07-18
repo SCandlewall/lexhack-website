@@ -106,7 +106,7 @@
 	}
 
 	#divider {
-		height: 5px !important;
+		height: 7px !important;
 	}
 
 	#basicInfo {
@@ -120,6 +120,14 @@
 
 	#divider {
 		color: blue;
+	}
+
+	html #basicInfo {
+		height: calc(75% - 5px) !important;
+	}
+
+	html #titleDiv {
+		height: calc(25% - 5px) !important;
 	}
 }
 
