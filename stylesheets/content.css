@@ -7,27 +7,14 @@
 	font-family: "PT Sans";
 	font-size: 3.5em;
 	color: #E0E0E0;
-
-	/*white-space: pre-wrap;       /* css-3 */
- 	/*white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */*/
-	/*white-space: -pre-wrap;      /* Opera 4-6 */*/
-	/*white-space: -o-pre-wrap;    /* Opera 7 */*/*/
-	/*word-wrap: break-word;       /* Internet Explorer 5.5+ */*/
-
-}
-
-#content pre {
-	white-space: pre-wrap;       /* css-3 */
-white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
-white-space: -pre-wrap;      /* Opera 4-6 */
-white-space: -o-pre-wrap;    /* Opera 7 */
-word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
 
 #content .contentSection {
 	padding: 40px;
 	margin-top: 40px;
 	margin-bottom: 40px;
+
+	box-shadow: 5px 5px 4px #707070;
 }
 
 .textBox span{

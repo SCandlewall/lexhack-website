@@ -1,26 +1,132 @@
-@media (min-width: 1361px) {
+@media (min-aspect-ratio: 900/716) and (min-width: 1361px) {
 	#title p{
 		font-size: 28em;
 	}
 }
 
-@media (max-width: 1360px) and (min-width: 1061px){
+/*cutoff: 900 / 716*/
+/*below that, vertical layout */
+
+/*#title p{
+	font-size: 28em;
+}*/
+@media (min-aspect-ratio: 900/716) and (max-width: 1360px) and (min-width: 1061px){
 	#title p{
 		font-size: 20em;
 	}
+
+
+	#divider {
+			height: 80% !important;
+			top: 10% !important;
+	}
+
+	#basicInfo {
+		font-size: 90%;
+	}
 }
 
-
-
-@media (max-width: 1060px) and (min-width: 582px) {
+@media (min-aspect-ratio: 900/716) and (max-width: 1060px) and (min-width: 801px){
 	#title p{
-		font-size: 10em;
+		font-size: 13em;
+	}
+
+
+	#divider {
+			height: 70% !important;
+			top: 15% !important;
+	}
+
+	#basicInfo {
+		font-size: 75%;
+	}
+}
+
+@media (min-aspect-ratio: 900/716) and (max-width: 800px) and (min-width: 0px){
+	#title p{
+		font-size: 6em;
+	}
+
+	#titleDiv {
+		padding-right: 10px !important;
+	}
+
+	#divider {
+			height: 70% !important;
+			top: 15% !important;
+	}
+
+	#basicInfo {
+		font-size: 60%;
+		width: 40%;
+		padding-left: 10px !important;
+
+	}
+}
+
+@media (max-aspect-ratio: 899/716) {
+	#title p {
+		font-size: 20em;
+		/*line-height: 10px;*/
+	}
+
+	#titleContainer {
+		width: 90% !important;
+		top: 50% !important;
+		transform: translateY(-50%);
+		height: auto !important;
+	}
+
+	 /*TITLE COMPONENT*/
+	#titleDiv {
+		width: 100% !important;
+		display: block !important;
+		height: auto !important;
+		padding-right: 0 !important;
+		/*padding-bottom: 10px !important;*/
+		/*transform: */
+	}
+
+	#title {
+		transform: none !important;
+		top: auto !important;
+	}
+
+	#divider {
+		display: block !important;
+		width: 100% !important;
+		height: 8px !important;
+	}
+
+	#basicInfo {
+		display: block !important;
+		width: 100% !important;
+		height: auto !important;
+		padding: 0 !important;
+		text-align: center !important;
+
+	}
+
+	#basicInfo div {
+		top: auto !important;
+		transform: none !important;
+		padding-top: 30px !important;
+		display: inline-block;
+	}
+}
+
+@media (max-aspect-ratio: 899/716) and (max-width: 570px){
+	#title p{
+		font-size: 13em !important;
 	}
 
 	#basicInfo {
 		font-size: 80%;
 	}
+}
 
+
+@media (max-width: 1060px) and (min-width: 582px) {
 	#content {
 		font-size: 80%;
 	}
@@ -32,14 +138,41 @@
 	#basicInfo {
 		width: calc(40% - 5px) !important;
 	}
-
-	/* drop content, title, and basicInfo font sizes, but NOT menu */
-	/* also give basicInfo more space
-	next step is reorganize banner layout*/
 }
 
-@media (max-width: 581px){
-	/*drop margins, reorganize the hero*/
+@media (max-width: 1130px) and (min-width: 851px) {
+	#content {
+		font-size: 88%;
+		width: 80% !important;
+		margin-left: 10% !important;
+	}
+}
+
+@media (max-width: 850px) and (min-width: 710px) {
+	#content {
+		font-size: 85%;
+		width: 90% !important;
+		margin-left: 5% !important;
+	}
+}
+
+@media (max-width: 709px) and (min-width: 0px) {
+	#content {
+		font-size: 85%;
+		width: 90% !important;
+		margin-left: 5% !important;
+	}
+
+	#FAQ .textBox div {
+		width: calc(100%) !important;
+		margin-right: 0px !important;
+	}
+}
+
+/*Could make it so that it only does the reorganization at the right aspect ratio. That actually makes a lot more sense.*/
+
+/*@media (max-width: 581px){
+	drop margins, reorganize the hero
 
 	#title p {
 		font-size: 6em;
@@ -52,7 +185,7 @@
 		height: 80% !important;
 	}
 
-	/* TITLE COMPONENT */
+	 TITLE COMPONENT
 	#titleDiv {
 		width: 100% !important;
 		height: calc(40% - 5px) !important;
@@ -66,17 +199,17 @@
 		top:auto !important;
 	}
 
-	/* DIVIDING LINE */
+	 DIVIDING LINE
 	#divider {
 		height: 6px !important;
 		width: 100% !important;
 	}
 
-	/* INFO COMPONENT */
+	 INFO COMPONENT
 	#basicInfo {
 		height: calc(60% - 5px) !important;
 		width: 100% !important;
-		font-size: 75%;
+		font-size: 80%;
 	}
 
 	#basicInfo div {
@@ -102,7 +235,7 @@
 		width: calc(100%) !important;
 		margin-right: 0px !important;
 	}
-}
+}*/
 
 @media (min-aspect-ratio: 1080/645){
 	#hero img {
@@ -122,73 +255,67 @@ html, body {
 	height: 100%;
 	width: 100%;
 	margin: 0;
+	padding: 0;
 	font-size: 62.5%;
 	font-family: "PT Sans";
-}
-
-html {
 	background-color: #E8E4D8;
-	/*padding-bottom: 40px;*/
-	padding-left: 0;
-	padding-right: 0;
-	padding-top: 0;
-}
-
-body {
-	padding: 0;
 }
 
 /* HERO IMAGE */
 #hero {
 	height: calc(100% - 50px);
-	width: inherit;
+	width: 100%;
 	overflow-x: hidden;
 	overflow-y: hidden;
 	position: relative;
 
+	text-align: center;
+
 }
 
 #hero img {
-	overflow-x: hidden;
-	overflow-y: hidden;
+	position: absolute;
+	display: block;
 }
 
 /* TITLE AND EXPLANATION BOX */
 #titleContainer {
-	overflow: visible;
-	position: absolute;
+	position: relative;
+	white-space: nowrap;
+	display: inline-block;
 	top: 25%;
-	left: 10%;
-	width: 80%;
+	max-width: 95%;
 	height: 50%;
 }
 
 /* TITLE COMPONENT */
 #titleDiv {
-	width: calc(70% - 5px);
 	height: 100%;
 	position: relative;
-	float: left;
+	padding-right: 30px;
+	display: inline-block;
+	vertical-align: top;
 }
 
 #title {
-	position: absolute;
+	position: relative;
 	top: 50%;
-	right: 30px;
 	transform: translateY(-50%);
+	white-space: nowrap;
 }
 
 #title .first {
 	color: #479AFF;
 	position: relative;
+	left: 2px;
 }
 
 #title p {
 	color: #FFC747;
 	font-weight: bold;
-	display: inline;
+	display: inline-block;
 	margin: 0px;
-	float: left;
+	text-shadow: 2px 2px #E0E0E0;
 }
 
 /* DIVIDING LINE */
@@ -197,28 +324,41 @@ body {
 	height: 100%;
 	position: relative;
 	background-color: #E0E0E0;
-	float: left;
+	display: inline-block;
+	vertical-align: top;
 }
+
+
+/*relatively positioned things continue to affect flow even if they are inside an absolutely positioned object!*/
 
 /* INFO COMPONENT */
 #basicInfo {
-	float: left;
-	width: calc(30% - 5px);
+	display: inline-block;
 	height: 100%;
+	padding-left: 30px;
 }
 
 #basicInfo div {
-	margin-left: 30px;
-	width: calc(100% - 30px);
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
+	white-space: normal;
+	text-align: left;
+
+	/*YOU CAN ASSIGN A WIDTH HERE (~35% is okay) TO MAKE IT
+
+	another solution is to have the title be locked to the left, and have this div take the remaining space*/
 }
 
 #basicInfo div p {
-	margin: 10px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-left: 0px;
+	margin-bottom: 10px;
+	transform: translateY(-5px);
 	font-size: 3.5em;
-	color: #E0E0E0
+	color: #E0E0E0;
+	white-space: normal;
 }
 
 #basicInfo a{
