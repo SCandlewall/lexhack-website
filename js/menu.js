@@ -1,5 +1,6 @@
 window.onload = function() {
 	var menu = document.getElementById("menu");
+	var About = document.getElementById("About");
 
 	var placeholder = document.getElementById("placeholder");
 	var top = placeholder.getBoundingClientRect().top;
@@ -26,6 +27,7 @@ window.onload = function() {
 
 		if (mq.matches) {
 			menu.className = "fixedBottomMenu";
+			About.style.marginTop = 0;
 		} else {
 			if ((top < 0)){
 				menu.className = "fixedTopMenu";
