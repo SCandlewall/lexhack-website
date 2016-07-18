@@ -19,7 +19,8 @@
 	/*top: 0px;*/
 
 	/*BAD*/
-	bottom: 0px;
+	/*bottom: 0px;*/
+	top: 0px;
 	position: fixed;
 }
 
