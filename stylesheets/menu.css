@@ -24,9 +24,9 @@
 
 #menu li{
 	display: inline-block;
-	font-size: 3.5em;
-	font-weight: bold;
-	color: #E0E0E0;
+	/*font-size: 3.5em;*/
+	/*font-weight: bold;
+	color: #E0E0E0;*/
 
 	/*vertical-align: middle;*/
 	/*line-height: 100%;*/
@@ -36,6 +36,13 @@
 	text-align: center;
 	width: 17.5%;
 	/*font-family: "PT Sans";*/
+}
+
+#menu li a {
+	font-size: 3.5em;
+	font-weight: bold;
+	color: #E0E0E0;
+	text-decoration: none;
 }
 
 #menu li:hover {
