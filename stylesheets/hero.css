@@ -1,0 +1,177 @@
+@media (max-width: 1427px) {
+    body {
+        font-size: 52.5% !important;
+    }
+}
+
+@media (max-width: 1209px) {
+	#title p{
+		font-size: 25em !important;
+	}
+}
+
+@media (max-width: 1018px) {
+	#title p{
+		font-size: 12em !important;
+	}
+
+	#titleDiv {
+		width: calc(50% - 5px) !important;
+	}
+
+	#basicInfo {
+		width: calc(50% - 5px) !important;
+	}
+}
+
+@media (min-aspect-ratio: 1080/645){
+	#hero img {
+		width: calc(100%) !important;
+		height: auto !important;
+	}
+}
+
+@media (min-width: 731 px){
+	#hero {
+		min-height: 260px;
+	}
+}
+
+/*these queries are gonna get real complicated real soon*/
+
+/*@media (max-width: 730px) {
+	#title p{
+		font-size: 12em !important;
+	}
+
+	#titleDiv {
+		width: calc(50% - 5px) !important;
+	}
+
+	#basicInfo {
+		width: calc(50% - 5px) !important;
+	}
+}
+
+@media (min-width: 1019px) {
+	#title p{
+		font-size: 12em !important;
+	}
+
+	#titleDiv {
+		width: calc(50% - 5px) !important;
+	}
+
+	#basicInfo {
+		width: calc(50% - 5px) !important;
+	}
+}*/
+
+html, body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	font-size: 62.5%;
+	font-family: "PT Sans";
+}
+
+/* HERO IMAGE */
+#hero {
+	height: calc(100% - 50px);
+	width: inherit;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	position: relative;
+
+}
+
+#hero img {
+	height: 130%;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+/* TITLE AND EXPLANATION BOX */
+#titleContainer {
+	overflow: visible;
+	position: absolute;
+	top: 25%;
+	left: 10%;
+	width: 80%;
+	height: 50%;
+}
+
+/* TITLE COMPONENT */
+#titleDiv {
+	/*originally 65*/
+	width: calc(70% - 5px);
+	height: 100%;
+	position: relative;
+	float: left;
+}
+
+#title {
+	position: absolute;
+	top: 50%;
+	right: 30px;
+	transform: translateY(-50%);
+}
+
+#title .first {
+	color: #479AFF;
+	position: relative;
+}
+
+#title p {
+	color: #FFC747;
+	font-weight: bold;
+	display: inline;
+	font-size: 30em;
+	margin: 0px;
+	float: left;
+}
+
+/* DIVIDING LINE */
+#divider {
+	width: 10px;
+	height: 100%;
+	position: relative;
+	background-color: #E0E0E0;
+	float: left;
+}
+
+/* INFO COMPONENT */
+#basicInfo {
+	float: left;
+	width: calc(30% - 5px);
+	height: 100%;
+}
+
+#basicInfo div {
+	margin-left: 30px;
+	width: calc(100% - 30px);
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+#basicInfo div p {
+	margin: 0px;
+	font-size: 3.5em;
+	color: #E0E0E0
+}
+
+#basicInfo a{
+	color:#B5D8FF
+}
+
+
+/*#titleContainer {
+	overflow: visible;
+	position: absolute;
+	border: 2px solid red;
+	left: 10%;
+	width: 80%;
+	height: 50%;
+}*/

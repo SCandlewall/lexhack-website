@@ -1,0 +1,73 @@
+/* TITLE AND EXPLANATION BOX */
+#titleContainer {
+	overflow: visible;
+	position: absolute;
+	top: 25%;
+	left: 10%;
+	width: 80%;
+	height: 50%;
+}
+
+/* TITLE COMPONENT */
+#titleDiv {
+	/*originally 65*/
+	width: calc(70% - 5px);
+	height: 100%;
+	position: relative;
+	float: left;
+}
+
+#title {
+	position: absolute;
+	top: 50%;
+	right: 30px;
+	transform: translateY(-50%);
+}
+
+#title .first {
+	color: #479AFF;
+	position: relative;
+}
+
+#title p {
+	color: #FFC747;
+	font-weight: bold;
+	display: inline;
+	font-size: 30em;
+	margin: 0px;
+	float: left;
+}
+
+/* DIVIDING LINE */
+#divider {
+	width: 10px;
+	height: 100%;
+	position: relative;
+	background-color: #E0E0E0;
+	float: left;
+}
+
+/* INFO COMPONENT */
+#basicInfo {
+	float: left;
+	width: calc(30% - 5px);
+	height: 100%;
+}
+
+#basicInfo div {
+	margin-left: 30px;
+	width: calc(100% - 30px);
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+#basicInfo div p {
+	margin: 0px;
+	font-size: 3.5em;
+	color: #E0E0E0
+}
+
+#basicInfo a{
+	color:#B5D8FF
+}
