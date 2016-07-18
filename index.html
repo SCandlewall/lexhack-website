@@ -4,8 +4,18 @@
 	<link href="https://fonts.googleapis.com/css?family=Kavivanar|PT+Sans:400,400i,700,700i|Permanent+Marker" rel="stylesheet">
 	<link href="stylesheets/hero.css" type="text/css" rel="stylesheet">
 	<link href="stylesheets/menu.css" type="text/css" rel="stylesheet">
-	<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
-	<!-- that caused a lot of problems, why? -->
+	<link href="stylesheets/content.css" type="text/css" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- that caused a lot of problems, why? Actually it didn't, it just didn't fix the main problem.
+		i won't try to fix the zooming bug. this does successfully inform the site of how big the phone actually is, so it doesn't try
+	to render 1000 pixels wide.
+
+	so if phone is actually 320 pixels wide, a div set to 320 px spans the screen horizontally
+
+	but definitely make it work for desktops first
+
+-->
+
 </head>
 
 <body>
@@ -14,7 +24,7 @@
 		<img src = "images/minuteman.jpg">
 
 		<!-- The center text block, containing title and info -->
-		<!-- <div id="titleContainer">
+		<div id="titleContainer">
 
 			<div id="titleDiv">
 				<div id="title">
@@ -35,12 +45,12 @@
 				</div>
 			</div>
 
-		</div> -->
+		</div>
 
 	</div>
 
-	<!-- <div id="menu"> -->
-		<!-- <ul>
+	<div id="menu">
+		<ul>
 			<li class="first">About</li>
 			<li>FAQ</li>
 			<li>Register</li>
@@ -48,17 +58,196 @@
 		</ul>
 	</div>
 
-	<div id="About">
-	</div>
+	<div id=content>
+		<div id="About" class="contentSection">
 
-	<div id="FAQ">
-	</div>
+			<div class="textBox">
+<h1>ABOUT</h1>
 
-	<div id="Register">
-	</div>
+				<p>
+					<span>LexHack</span> is a hackathon for high schoolers of all programming abilities.
+					It&#8217;s free, all day (12 hours), and equipped with hackable hardware
+					(e.g. Arduino, Raspberry Pi), great prizes, tons of swag, delicious
+					food (all meals provided!), and mentors to help you build your project.
+					It&#8217;s <span>Saturday, September 19th</span> in the Lexington High School Main Building.
+					<a href="google.com">Sign up here!!!!!!</a>
+				</p>
 
-	<div id="Contact">
-	</div> -->
+				<p>
+					<span>What is a hackathon?</span> A <a href="https://en.wikipedia.org/wiki/Hackathon">hackathon</a>
+					is an engineering and coding
+					event where students collaborate to build or program entire projects.
+					Come with a team of friends, or create a team at the event and
+					make new ones. No programming experience? Our mentors can help you
+					get started making a basic web app with our <a href="http://start.lexhack.org/">start guide</a>.
+					LexHack&#8217;s
+					mission is to spread the love of programming and innovation to
+					everyone by making our event as accessible as possible.
+				</p>
+
+				<p>
+					Check out last year&#8217;s archive at <a href="2015.lexhack.org">2015.lexhack.org</a>.
+				</p>
+
+<pre>
+<span>Schedule</span>
+8:00 am &#8226; 9:00 am		Registration / mingle time
+9:00 am &#8226; 9:15 am		Opening ceremonies
+9:15 am &#8226; 9:15 pm		Hacking (with breaks for food)
+9:15 pm &#8226; 10:00 pm		1st round judging + deliberation
+10:00 pm &#8226; 11:00 pm	Demos / 2nd round judging + closing ceremonies
+</pre>
+
+			</div>
+		</div>
+
+		<div id="FAQ" class="contentSection">
+			<div class = "textBox">
+				<h1>FAQ</h1>
+
+				<div>
+					<h3>
+						Who can attend?
+					</h3>
+
+					<p>
+						Any high school student can attend. If you're in middle
+						school or are otherwise unsure of your eligibility, please email us.
+					</p>
+				</div>
+
+				<div>
+					<h3>
+						What if I have no programming experience?
+					</h3>
+
+					<p>
+						No problem! LexHack is a great way to learn, thanks to
+						our start guide and mentors. We even have prizes exclusively for beginners.
+					</p>
+				</div>
+
+				<div>
+					<h3>
+						How much does LexHack cost?
+					</h3>
+
+					<p>
+						Absolutely nothing! Unfortunately, we cannot offer travel
+						reimbursements at this time, but feel free to contact us for travel advice.
+					</p>
+				</div>
+
+				<div>
+					<h3>
+						What do I bring?
+					</h3>
+
+					<p>
+						Bring a laptop, laptop charger, the signed waiver
+						(which will be sent out in an email before the event),
+						and anything else you want to hack with. All meals and
+						snacks are provided free, so you won't need to bring any.
+						If you require special food accommodations, or don't have
+						a laptop you can bring, please contact us.
+
+					</p>
+				</div>
+
+				<div>
+					<h3>
+						How do I make a hardware hack?
+					</h3>
+
+					<p>
+						Read about available hardware and usage guidelines here.
+						You will also have to reserve a piece of hardware in advance,
+						through the registration form.
+
+					</p>
+				</div>
+
+				<div>
+					<h3>
+						Do I need a team for LexHack?
+					</h3>
+
+					<p>
+						Nope! You can join with others at the event.
+					</p>
+				</div>
+
+				<div>
+					<h3>
+						How does judging work?
+					</h3>
+
+					<p>
+						You will have the chance to present your project to a panel
+						of professionals, and receive feedback on your work.
+						Projects will be judged on their creativity, effectiveness, and technicality.
+					</p>
+				</div>
+
+				<div>
+					<h3>
+						How can I help LexHack?
+					</h3>
+
+					<p>
+						You can sign up as a mentor here!!!!!!, or as a volunteer
+						by sending us an email. Interested in sponsoring?
+						Check out our sponsor information here!!!!!!.
+					</p>
+				</div>
+
+				<p>
+					Other questions, comments, or concerns? Just email us at
+					info@lexhack.org and we&#8217;ll get back to you as soon as possible.
+				</p>
+
+			</div>
+		</div>
+
+		<div id="Register" class="contentSection">
+			<div id="textBox">
+				<h1>REGISTER</h1>
+
+				<p>
+					You can sign up through our form here!!!!!!. If you want to use some hardware
+					and don't have what you need at home, please indicate that on the hardware section.
+					Tell us what you're looking for, and we'll see if we can provide it at the event.
+				</p>
+			</div>
+		</div>
+
+		<div id="Sponsors" class="contentSection">
+			<h1>SPONSORS</h1>
+
+			<p>
+				Working with LexHack as a sponsor gives companies a unique opportunity
+				to connect with over 100 of the best and brightest high school students
+				in the region. See the potential sponsorship tiers here!!!!!.
+			</p>
+
+			<p>
+				Interested in donating money, mentors, food, or swag? Just get in touch
+				- we'd love to have you!
+			</p>
+		</div>
+
+		<div id="Contact" class="contentSection">
+			<h1>CONTACT</h1>
+
+			<p>
+				Need to get in touch? Shoot us an email at info@lexhack.org!
+			</p>
+
+			<p>
+				You can also find us on Twitter @lexhacks.
+			</p>
+		</div>
+	</div>
 
 </body>
 </html>
@@ -70,3 +259,25 @@
 
 <!-- have to eventually use a media query to base size of image off of height, but i don't know how really -->
 <!-- use aspect ratio! -->
+
+<!-- good faq's:
+
+who can attend
+
+what if no programming experience
+
+cost
+
+what to bring
+
+hardware hacks
+
+do you need team
+
+judging
+
+rules for projects and judging
+
+how to help -->
+
+<!-- A good faq system has to use media queries -->

@@ -1,0 +1,89 @@
+#content {
+	width: 70%;
+	margin-left: 15%;
+}
+
+#content p, #content pre {
+	font-family: "PT Sans";
+	font-size: 3.5em;
+	color: #E0E0E0;
+	/*margin: 0;*/
+}
+
+#content .contentSection {
+	/*padding-top: 20px;
+	padding-bottom: 20px;*/
+	padding: 40px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.textBox {
+	/*width: 60%;
+	margin-left: 20%;*/
+}
+
+.textBox span{
+	font-weight: bold;
+}
+
+.textBox a{
+	color: #FFC747;
+}
+
+#About {
+	background-color: #316bb2;
+}
+
+#FAQ {
+	background-color: #FFC747;
+}
+
+
+#FAQ p, #FAQ h1, #FAQ h3 {
+	color: #41454A;
+}
+
+#Register {
+	background-color: #316bb2;
+}
+
+#Sponsors {
+	background-color: #FFC747;
+}
+
+#Sponsors h1, #Sponsors p {
+	color: #41454A;
+}
+
+#Contact {
+	background-color: #316bb2;
+}
+
+h1 {
+	font-size: 7em;
+	font-weight: bold;
+	/*text-decoration: underline;*/
+	/*margin-top: 20px;*/
+	margin-bottom: 10px;
+	color: #E0E0E0;
+}
+
+#FAQ .textBox div {
+	width: calc(50% - 60px);
+	margin-right: 40px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+#FAQ .textBox div h3 {
+	font-size: 4em;
+	font-weight: bold;
+	/*color:*/
+}
+
+
+
+/*#FAQ h1 {
+	margin-bottom: 0;
+}*/
