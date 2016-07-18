@@ -84,8 +84,8 @@ html {
 #hero {
 	height: calc(100% - 50px);
 	width: inherit;
-	overflow-x: hidden;
-	overflow-y: hidden;
+	/*overflow-x: hidden;
+	overflow-y: hidden;*/
 	position: relative;
 
 }
