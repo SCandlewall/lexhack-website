@@ -17,7 +17,7 @@ html, body {
 	position: relative;
 
 	text-align: center;
-
+	box-shadow:8px 8px 6px #707070;
 }
 
 #hero img {

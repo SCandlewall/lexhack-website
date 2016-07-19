@@ -156,7 +156,7 @@
 	}
 }
 
-/*@media (min-aspect-ratio: 1080/645){
+@media (min-aspect-ratio: 1080/645){
 	#hero img {
 		width: 100%;
 		height: auto;
@@ -168,4 +168,4 @@
 		width: auto;
 		height: 130%;
 	}
-}*/
+}
