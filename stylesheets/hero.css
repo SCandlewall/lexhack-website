@@ -26,6 +26,10 @@ html, body {
 	display: block;
 }
 
+#registrationLink a{
+	color: #FFC747 !important;
+}
+
 /* TITLE AND EXPLANATION BOX */
 #titleContainer {
 	position: relative;
