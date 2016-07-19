@@ -89,7 +89,9 @@
 
 	#divider {
 		display: block !important;
-		width: 100% !important;
+		width: 60% !important;
+		top: 0 !important;
+		left: 20% !important;
 		height: 8px !important;
 	}
 
