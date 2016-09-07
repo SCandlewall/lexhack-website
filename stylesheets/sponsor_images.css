@@ -1,0 +1,48 @@
+.sponsor_img {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	right: 0px;
+	margin: auto;
+	max-height: 150px;
+
+	box-sizing: border-box;
+	display: block;
+
+	padding: 20px;
+	transition: padding 0.2s ease;
+}
+
+/*The image will shrink from the max-height by however much padding you have set. Pretty sure it has to maintain dimensions.*/
+
+/*
+SPONSORS:
+
+EMPOW
+STARTUP VITAMINS
+GITHUB
+THAT ROBO COMPANY
+STICKER MULE (RESPOND)
+*/
+
+
+.sponsor_img:hover {
+	padding: 0px;
+}
+
+.textBox {
+	clear: both;
+}
+
+/*Set height to be accurate to max size of image*/
+/*Set width to determine how many fill the screen / accomodate for wide images */
+#all_sponsor_imgs a {
+	display: block;
+	position: relative;
+	float: left;
+	height: 150px;
+	width: 33%;
+	padding-bottom: 50px;
+	/*padding: 20px;*/
+}
