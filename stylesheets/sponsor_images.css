@@ -5,13 +5,32 @@
 	bottom: 0px;
 	right: 0px;
 	margin: auto;
-	max-height: 150px;
+	/*max-height: 150px;*/
 
 	box-sizing: border-box;
 	display: block;
 
 	padding: 20px;
 	transition: padding 0.2s ease;
+}
+
+@media (min-width: 1157px){
+	.sponsor_img{			max-height:	150px;	}
+	#all_sponsor_imgs a {	height: 	150px;	}
+}
+@media (max-width: 1156px){
+		.sponsor_img{			max-height:	120px;	}
+		#all_sponsor_imgs a {	height: 	120px;	}
+}
+
+@media (max-width: 660px){
+		.sponsor_img{			max-height:	90px;	}
+		#all_sponsor_imgs a {	height: 	90px;	}
+}
+
+@media (max-width: 448px){
+		.sponsor_img{			max-height:	80px;	}
+		#all_sponsor_imgs a {	height: 	80px;	}
 }
 
 /*The image will shrink from the max-height by however much padding you have set. Pretty sure it has to maintain dimensions.*/
@@ -41,7 +60,7 @@ STICKER MULE (RESPOND)
 	display: block;
 	position: relative;
 	float: left;
-	height: 150px;
+	/*height: 150px;*/
 	width: 33%;
 	padding-bottom: 50px;
 	/*padding: 20px;*/
