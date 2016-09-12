@@ -15,22 +15,22 @@
 }
 
 @media (min-width: 1157px){
-	.sponsor_img{			max-height:	150px;	}
-	#all_sponsor_imgs a {	height: 	150px;	}
+	.sponsor_img{			height:	150px;	}
+	#all_sponsor_imgs a {	height: 150px;	}
 }
 @media (max-width: 1156px){
-		.sponsor_img{			max-height:	120px;	}
-		#all_sponsor_imgs a {	height: 	120px;	}
+		.sponsor_img{			height:	120px;	}
+		#all_sponsor_imgs a {	height: 120px;	}
 }
 
 @media (max-width: 660px){
-		.sponsor_img{			max-height:	90px;	}
-		#all_sponsor_imgs a {	height: 	90px;	}
+		.sponsor_img{			height:	90px;	}
+		#all_sponsor_imgs a {	height: 90px;	}
 }
 
 @media (max-width: 448px){
-		.sponsor_img{			max-height:	80px;	}
-		#all_sponsor_imgs a {	height: 	80px;	}
+		.sponsor_img{			height:	80px;	}
+		#all_sponsor_imgs a {	height: 80px;	}
 }
 
 /*The image will shrink from the max-height by however much padding you have set. Pretty sure it has to maintain dimensions.*/
@@ -62,6 +62,6 @@ STICKER MULE (RESPOND)
 	float: left;
 	/*height: 150px;*/
 	width: 33%;
-	padding-bottom: 50px;
+	margin-bottom: 80px;
 	/*padding: 20px;*/
 }
