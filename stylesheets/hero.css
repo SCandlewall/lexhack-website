@@ -26,10 +26,6 @@ html, body {
 	display: block;
 }
 
-#registrationLink a{
-	color: #FFC747 !important;
-}
-
 /* TITLE AND EXPLANATION BOX */
 #titleContainer {
 	position: relative;
@@ -93,19 +89,13 @@ html, body {
 	padding-left: 30px;
 }
 
-#basicInfo div {
+#basicText {
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
-
-	white-space: normal;
 	text-align: left;
-
-	/*YOU CAN ASSIGN A WIDTH HERE (~35% is okay) TO MAKE IT
-
-	another solution is to have the title be locked to the left, and have this div take the remaining space*/
 }
 
 #basicInfo div p {
@@ -113,15 +103,27 @@ html, body {
 	margin-right: 0px;
 	margin-left: 0px;
 	margin-bottom: 10px;
-
 	transform: translateY(-5px);
 	-webkit-transform: translateY(-5px);
 	-ms-transform: translateY(-5px);
 	font-size: 3.5em;
 	color: #E0E0E0;
-	white-space: normal;
 }
 
 #basicInfo a{
 	color:#B5D8FF
+}
+
+#registration {
+	background-color: #479AFF;
+	text-decoration: none;
+	color: white;
+	font-size: 3.5em;
+	color: #E0E0E0;
+	padding: 8px 16px 8px 16px;
+	text-align: center;
+	text-decoration: none;
+	box-shadow: 2px 2px #E0E0E0;
+	display:inline;
+	margin-right:10px;
 }
