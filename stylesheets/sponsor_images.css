@@ -14,23 +14,28 @@
 	transition: padding 0.2s ease;
 }
 
-@media (min-width: 1157px){
+@media (min-width: 1400px){
 	.sponsor_img{			height:	150px;	}
 	#all_sponsor_imgs a {	height: 150px;	}
 }
-@media (max-width: 1156px){
+@media (max-width: 1399px){
 		.sponsor_img{			height:	120px;	}
 		#all_sponsor_imgs a {	height: 120px;	}
 }
 
-@media (max-width: 660px){
-		.sponsor_img{			height:	90px;	}
-		#all_sponsor_imgs a {	height: 90px;	}
+@media (max-width: 1000px){
+		.sponsor_img{			height:	100px;	}
+		#all_sponsor_imgs a {	height: 100px;	}
 }
 
-@media (max-width: 448px){
+@media (max-width: 900px){
 		.sponsor_img{			height:	80px;	}
 		#all_sponsor_imgs a {	height: 80px;	}
+}
+
+@media (max-width: 550px){
+		.sponsor_img{			height:	60px;	}
+		#all_sponsor_imgs a {	height: 60px;	}
 }
 
 /*The image will shrink from the max-height by however much padding you have set. Pretty sure it has to maintain dimensions.*/
@@ -44,7 +49,6 @@ GITHUB
 THAT ROBO COMPANY
 STICKER MULE (RESPOND)
 */
-
 
 .sponsor_img:hover {
 	padding: 0px;
@@ -61,7 +65,7 @@ STICKER MULE (RESPOND)
 	position: relative;
 	float: left;
 	/*height: 150px;*/
-	width: 33%;
-	margin-bottom: 80px;
+	width: 50%;
+	margin-bottom: 40px;
 	/*padding: 20px;*/
 }
