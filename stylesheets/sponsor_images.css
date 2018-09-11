@@ -1,0 +1,71 @@
+.sponsor_img {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	right: 0px;
+	margin: auto;
+	/*max-height: 150px;*/
+
+	box-sizing: border-box;
+	display: block;
+
+	padding: 5px;
+	transition: padding 0.2s ease;
+}
+
+@media (min-width: 1400px){
+	.sponsor_img{			height:	150px;	}
+	#all_sponsor_imgs a {	height: 150px;	}
+}
+@media (max-width: 1399px){
+		.sponsor_img{			height:	120px;	}
+		#all_sponsor_imgs a {	height: 120px;	}
+}
+
+@media (max-width: 1000px){
+		.sponsor_img{			height:	100px;	}
+		#all_sponsor_imgs a {	height: 100px;	}
+}
+
+@media (max-width: 900px){
+		.sponsor_img{			height:	80px;	}
+		#all_sponsor_imgs a {	height: 80px;	}
+}
+
+@media (max-width: 550px){
+		.sponsor_img{			height:	60px;	}
+		#all_sponsor_imgs a {	height: 60px;	}
+}
+
+/*The image will shrink from the max-height by however much padding you have set. Pretty sure it has to maintain dimensions.*/
+
+/*
+SPONSORS:
+
+EMPOW
+STARTUP VITAMINS
+GITHUB
+THAT ROBO COMPANY
+STICKER MULE (RESPOND)
+*/
+
+.sponsor_img:hover {
+	padding: 0px;
+}
+
+.textBox {
+	clear: both;
+}
+
+/*Set height to be accurate to max size of image*/
+/*Set width to determine how many fill the screen / accomodate for wide images */
+#all_sponsor_imgs a {
+	display: block;
+	position: relative;
+	float: left;
+	/*height: 150px;*/
+	width: 49%;
+	margin-bottom: 40px;
+	/*padding: 20px;*/
+}
