@@ -1,3 +1,72 @@
+@media (max-width: 1427px) {
+    body {
+        font-size: 52.5% !important;
+    }
+}
+
+@media (max-width: 1209px) {
+	#title p{
+		font-size: 25em !important;
+	}
+}
+
+@media (max-width: 1018px) {
+	#title p{
+		font-size: 12em !important;
+	}
+
+	#titleDiv {
+		width: calc(50% - 5px) !important;
+	}
+
+	#basicInfo {
+		width: calc(50% - 5px) !important;
+	}
+}
+
+@media (min-aspect-ratio: 1080/645){
+	#hero img {
+		width: calc(100%) !important;
+		height: auto !important;
+	}
+}
+
+@media (min-width: 731 px){
+	#hero {
+		min-height: 260px;
+	}
+}
+
+/*these queries are gonna get real complicated real soon*/
+
+/*@media (max-width: 730px) {
+	#title p{
+		font-size: 12em !important;
+	}
+
+	#titleDiv {
+		width: calc(50% - 5px) !important;
+	}
+
+	#basicInfo {
+		width: calc(50% - 5px) !important;
+	}
+}
+
+@media (min-width: 1019px) {
+	#title p{
+		font-size: 12em !important;
+	}
+
+	#titleDiv {
+		width: calc(50% - 5px) !important;
+	}
+
+	#basicInfo {
+		width: calc(50% - 5px) !important;
+	}
+}*/
+
 html, body {
 	height: 100%;
 	width: 100%;
@@ -5,135 +74,104 @@ html, body {
 	padding: 0;
 	font-size: 62.5%;
 	font-family: "PT Sans";
-	background-color: #E8E4D8;
 }
 
 /* HERO IMAGE */
 #hero {
 	height: calc(100% - 50px);
-	width: 100%;
+	width: inherit;
 	overflow-x: hidden;
 	overflow-y: hidden;
 	position: relative;
 
-	text-align: center;
-	box-shadow:8px 8px 6px #707070;
-	/*margin-bottom: 90px;*/
 }
 
 #hero img {
-	position: absolute;
-	display: block;
+	height: 130%;
+	overflow-x: hidden;
+	overflow-y: hidden;
 }
 
 /* TITLE AND EXPLANATION BOX */
 #titleContainer {
-	position: relative;
-	white-space: nowrap;
-	display: inline-block;
+	overflow: visible;
+	position: absolute;
 	top: 25%;
-	max-width: 95%;
+	left: 10%;
+	width: 80%;
 	height: 50%;
 }
 
 /* TITLE COMPONENT */
 #titleDiv {
+	/*originally 65*/
+	width: calc(70% - 5px);
 	height: 100%;
 	position: relative;
-	padding-right: 30px;
-	display: inline-block;
-	vertical-align: top;
+	float: left;
 }
 
 #title {
-	position: relative;
+	position: absolute;
 	top: 50%;
+	right: 30px;
 	transform: translateY(-50%);
-	-webkit-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	white-space: nowrap;
 }
 
 #title .first {
 	color: #479AFF;
 	position: relative;
-	left: 2px;
 }
 
 #title p {
 	color: #FFC747;
 	font-weight: bold;
-	display: inline-block;
+	display: inline;
+	font-size: 30em;
 	margin: 0px;
-	text-shadow: 2px 2px #E0E0E0;
+	float: left;
 }
 
 /* DIVIDING LINE */
 #divider {
 	width: 10px;
-	height: 70%;
-	top: 15%;
+	height: 100%;
 	position: relative;
 	background-color: #E0E0E0;
-	display: inline-block;
-	vertical-align: top;
+	float: left;
 }
-
-
-/*relatively positioned things continue to affect flow even if they are inside an absolutely positioned object!*/
 
 /* INFO COMPONENT */
 #basicInfo {
-	display: inline-block;
+	float: left;
+	width: calc(30% - 5px);
 	height: 100%;
-	padding-left: 30px;
 }
 
-#basicText {
+#basicInfo div {
+	margin-left: 30px;
+	width: calc(100% - 30px);
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
-	-webkit-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	text-align: left;
 }
 
 #basicInfo div p {
-	margin-top: 0px;
-	margin-right: 0px;
-	margin-left: 0px;
-	margin-bottom: 12px;
-	transform: translateY(-5px);
-	-webkit-transform: translateY(-5px);
-	-ms-transform: translateY(-5px);
+	margin: 0px;
 	font-size: 3.5em;
-	color: #E0E0E0;
+	color: #E0E0E0
 }
 
 #basicInfo a{
 	color:#B5D8FF
 }
 
-#registration {
-	background-color: #479AFF;
-	text-decoration: none;
-	color: white;
-	font-size: 3.5em;
-	color: #E0E0E0;
-	padding: 8px 16px 8px 16px;
-	text-align: center;
-	text-decoration: none;
-	display:inline;
-	margin-top:5px;
-	
-	-o-transition:.5s;
-	-ms-transition:.5s;
-	-moz-transition:.5s;
-	-webkit-transition:.5s;
-	transition:.5s;
-}
 
-#hov :hover {
-	background-color:#FFC747;
-	color: black;
-}
+/*#titleContainer {
+	overflow: visible;
+	position: absolute;
+	border: 2px solid red;
+	left: 10%;
+	width: 80%;
+	height: 50%;
+}*/
